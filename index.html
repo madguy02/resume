@@ -1,0 +1,240 @@
+<!--
+Author: Manish Kakoti
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Website</title>
+	<script src="js/jquery.min.js"> </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!---- start-smoth-scrolling---->
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 	
+</head>
+<body>
+
+ <div id="top-top" class="headerbg">
+	 
+	   <div class="header">
+		 
+			  <div class="container">
+				   <div class="logo">
+						<a href="images/Manish.pdf">Resume</a>
+				   </div>
+				  
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">ABOUT</a></li>
+						 <li><a class="scroll" href="#skills">SKILLS</a></li>
+						 <li><a class="scroll" href="#port">PORTFOLIO</a></li>
+						 <li><a class="scroll" href="#contact">CONTACT</a></li>
+					 </ul>
+				 </div>
+				  <!------Navigation ends-------->
+					<div class="clear"></div>
+			  </div>
+		 
+	   </div>
+	
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">
+			      <div class="bannerlogo">
+					  
+			      </div>
+			      <div class="bannerhead">
+				      <h2>My name is <span><strong>Manish Kakoti</strong></span></h2>
+				      <h3>Programmer/Web Developer</h3>
+				      <p>I like to build things,my github profile name is madguy02,i am also looking for new challenges and opportunities</p>
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  
+ </div>
+
+ <div class="content">
+	 <!------About starts--------->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>ABOUT<span> </span></h2>
+				  </div>
+				 <span><p>Currently pursuing my B.tech from SRM University in ComputerScience&Engineering,My major areas of interest being all about the web
+						Besides my curriculum, I have been associated with various University Projects,namely SRMSATV2.0 & TEAM 1.618</p></span>
+					 
+			  <div class="years">	 
+				<h4><b>2013-2015</b></h4>
+				 <span><h4>OnBoard Computer Engineer</h4></span>
+				 <p><i>I worked as an onboard computer engineer in SRMSATV2.0,where my responsibility was to design the controlsystem of the nano satellite
+					I successfully worked on the beacon signal of the satellite and the interfaces of I2C and SPI with ADCS and TTC subdomains.
+					I also worked with the bootsequence of the satellite as well as took a survey in figuring out best designed microcontrollers for
+					space missions</i></p>
+			  </div> 
+				
+			  <div class="years">	 		
+				 <h4><b>2014-2015</b></h4>
+				 <span><h4>Programmer @ TEAM-1.618</h4></span>
+				 <p><i>Worked as a programmer at Team-1.618<br></br>where my responsibilities was to program the raspberry pi and use arduino to make a master
+					slave circuit with rasp-pi.</i></p>
+			  </div> 
+					
+			   <div class="years">	 	
+				 <h4><b>Internships</b></h4>
+				 <span><h4>IIT-G,Commutatus,Martopolis</h4></span>
+				 <div class="labs">
+					 <p><i>Software Engineering intern at IIT-G.
+						Ruby on Rails Developer at Commutatus
+						Python developer at Martopolis</i></p>
+										
+			     </div>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 
+	 
+	
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>SKILLS<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+								<div class="skill-grids text-center">
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-1"></div>									
+												 <h3>JavaScript</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-2"></div>									
+												 <h3>Ruby on Rails</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-3"></div>									
+												 <h3>Git</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-4"></div>									
+												 <h3>Heroku & AWS</h3>	
+											 </div>								  
+										</div>
+										<div class="clearfix"> </div>
+								  </div>
+						   </div>
+					  </div>
+					<!---->
+					 <script type="text/javascript" src="js/circles.js"></script>
+								 <script>
+									var colors = [
+											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+										];
+									for (var i = 1; i <= 5; i++) {
+										var child = document.getElementById('circles-' + i),
+											percentage = 50 + (i * 10);
+											
+										Circles.create({
+											id:         child.id,
+											percentage: percentage,
+											radius:     80,
+											width:      15,
+											number:   	percentage / 10,
+											text:       '%',
+											colors:     colors[i - 1]
+										});
+									}
+							
+					</script>
+					
+					<!--/-->
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>PORTFOLIO<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="http://www.github.com/madguy02"><img src="images/monitr1.png"></a>
+						  <p>My github profile,consisting of all homebrew
+							 projects, username:madguy02</p>
+						  <a class="rightarrow" href="http://www.github.com/madguy02"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="http://www.linkedin.com/in/manishkakoti"><img src="images/monitr2.png"></a>
+						  <p>This includes my linkedin profile,with updated information
+							 </p>
+						  <a class="rightarrow" href="http://www.linkedin.com/in/manishkakoti"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="http://www.programmingfundaaaz.blogspot.in"><img src="images/monitr3.png"></a>
+						  <p>My blogging account where i share my knowledge
+							 </p>
+						  <a class="rightarrow" href="http://www.programmingfundaaaz.blogspot.in"><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+				  
+			  </div>
+		 </div>
+  </div>
+ 
+  <div  id="contact" class="footer">
+      <div class="container">
+	  
+		   <div class="contact-section text-center">
+			  <h2><span> </span>CONTACT<span> </span></h2>
+		  </div>
+		 <div class="row">
+		 
+			 <div class="col-md-6">
+				  <div class="footer-left">
+						<div class="social-icons">
+						   <a href="http://www.linkedin.com"><img src="images/in.png"></a>
+						   <a href="www.twitter.com"><img src="images/twt.png"></a>
+						   <a href="http://www.facebook.com"><img src="images/fb.png"></a>
+					   </div>
+					   <p>Abode Valley Kakkanstreet,potheri,near SRM University,Chennai.
+						contact no:9962647654(+91)
+						email @ manishkakoti688@gmail.com </p>
+				  </div>
+			 </div>
+			  
+			 
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+	  
+ </div>
+ 
+ </body>
+ </html>
+ 
+   
