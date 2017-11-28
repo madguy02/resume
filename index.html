@@ -144,7 +144,22 @@ Author: Manish Kakoti
 											<div class="skill-grid">
 												<div class="circle" id="circles-5"></div>									
 												 <h3>MongoDB</h3>	
-											 </div>											  
+											 </div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-5"></div>									
+												 <h3>D3.js</h3>	
+											 </div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-5"></div>									
+												 <h3>Node.js</h3>	
+											 </div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-5"></div>									
+												 <h3>Meteor</h3>	
+											 </div>															  
 										</div>
 										<div class="clearfix"> </div>
 								  </div>
@@ -156,9 +171,9 @@ Author: Manish Kakoti
 									var colors = [
 											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
 										];
-									
+									for (var i = 1; i <= 12; i++) {
 										var child = document.getElementById('circles-' + i),
-											percentage = 50 + (2 * 10);
+											percentage = 50 + (i * 10);
 											
 										Circles.create({
 											id:         child.id,
@@ -169,7 +184,7 @@ Author: Manish Kakoti
 											text:       '%',
 											colors:     colors[i - 1]
 										});
-									
+									}
 							
 					</script>
 					
